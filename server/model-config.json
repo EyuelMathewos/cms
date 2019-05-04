@@ -1,0 +1,78 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mongodb"
+  },
+  "AccessToken": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongodb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "project": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Material": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Request": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "schedule": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "stock": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "report": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Finance": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Approval": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "control": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Account": {
+    "dataSource": "mongodb",
+    "public": true
+  }
+}

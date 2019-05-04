@@ -1,0 +1,31 @@
+{
+  "name": "Material",
+  "plural": "Materials",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "MaterialId": {
+      "type": "number",
+      "required": true
+    },
+    "MaterialName": {
+      "type": "string",
+      "required": true
+    },
+    "MaterialQuality": {
+      "type": "string",
+      "required": true
+    },
+    "MaterialPrice": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,75 @@
+{
+  "name": "project",
+  "plural": "projects",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "projectId": {
+      "type": "number",
+      "id": true,
+      "generated": true
+    },
+    "projectName": {
+      "type": "string"
+    },
+    "progress": {
+      "type": "string",
+      "required": true
+    },
+    "managedby": {
+      "type": "string",
+      "required": true
+    },
+    "constructedBy": {
+      "type": "string",
+      "required": true
+    },
+    "coordiantedby": {
+      "type": "string"
+    },
+    "agreementdate": {
+      "type": "date"
+    },
+    "submissionDate": {
+      "type": "string"
+    },
+    "revenue": {
+      "type": "number"
+    },
+    "siteplace": {
+      "type": "string"
+    },
+    "propertyowner": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "approvals": {
+      "type": "hasOne",
+      "model": "Approval",
+      "foreignKey": "approvalProjectId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

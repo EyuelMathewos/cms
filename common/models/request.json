@@ -1,0 +1,33 @@
+{
+  "name": "Request",
+  "plural": "Requests",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "RequestId": {
+      "type": "number",
+      "id": true,
+      "generated": true,
+      "required": true
+    },
+    "AboutRequest": {
+      "type": "string",
+      "required": true
+    },
+    "Detail": {
+      "type": "string",
+      "required": true
+    },
+    "requestProjectId": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

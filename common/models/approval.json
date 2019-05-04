@@ -1,0 +1,36 @@
+{
+  "name": "Approval",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ProjectId": {
+      "type": "number",
+      "required": true
+    },
+    "projectName": {
+      "type": "string",
+      "required": true
+    },
+    "approvalid": {
+      "type": "number",
+      "id": true,
+      "generated": true
+    },
+    "ApprovalDate": {
+      "type": "date",
+      "required": true
+    },
+    "approvalProjectId": {
+      "type": "string",
+      "id": true,
+      "generated": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

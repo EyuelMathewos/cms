@@ -1,0 +1,49 @@
+{
+  "name": "report",
+  "plural": "reports",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "projectname": {
+      "type": "string",
+      "required": true
+    },
+    "projectId": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "detailedActivityDesc": {
+      "type": "string",
+      "required": true
+    },
+    "workperformed": {
+      "type": "string",
+      "required": true
+    },
+    "actualTime": {
+      "type": "number",
+      "required": true
+    },
+    "planedPrice": {
+      "type": "number",
+      "required": true
+    },
+    "usedPrice": {
+      "type": "number",
+      "required": true
+    },
+    "reportProjectId": {
+      "type": "string",
+      "id": true,
+      "generated": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

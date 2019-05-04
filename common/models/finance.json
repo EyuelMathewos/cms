@@ -1,0 +1,26 @@
+{
+  "name": "Finance",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "projectId": {
+      "type": "number",
+      "required": true
+    },
+    "projectName": {
+      "type": "string",
+      "required": true
+    },
+    "stock": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
