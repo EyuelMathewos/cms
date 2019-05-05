@@ -16,29 +16,8 @@
     "projectName": {
       "type": "string"
     },
-    "progress": {
-      "type": "string",
-      "required": true
-    },
-    "managedby": {
-      "type": "string",
-      "required": true
-    },
-    "constructedBy": {
-      "type": "string",
-      "required": true
-    },
-    "coordiantedby": {
+    "projectLifeTime": {
       "type": "string"
-    },
-    "agreementdate": {
-      "type": "date"
-    },
-    "submissionDate": {
-      "type": "string"
-    },
-    "revenue": {
-      "type": "number"
     },
     "siteplace": {
       "type": "string"

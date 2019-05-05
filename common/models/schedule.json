@@ -9,11 +9,11 @@
   "properties": {
     "projectName": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "projectId": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "taskToPerform": {
       "type": "string",

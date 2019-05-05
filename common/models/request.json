@@ -10,8 +10,7 @@
     "RequestId": {
       "type": "number",
       "id": true,
-      "generated": true,
-      "required": true
+      "generated": true
     },
     "AboutRequest": {
       "type": "string",
