@@ -63,7 +63,7 @@
     "dataSource": "mongodb",
     "public": true
   },
-  "Approval": {
+  "approval": {
     "dataSource": "mongodb",
     "public": true
   },

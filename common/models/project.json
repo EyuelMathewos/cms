@@ -3,6 +3,7 @@
   "plural": "projects",
   "base": "PersistedModel",
   "idInjection": true,
+  "strict": true,
   "options": {
     "validateUpsert": true
   },
@@ -50,11 +51,40 @@
   "relations": {
     "approvals": {
       "type": "hasOne",
-      "model": "Approval",
+      "model": "approval",
       "foreignKey": "approvalProjectId",
+      "primaryKey": "projectId",
       "options": {
         "nestRemoting": true
       }
+    },
+    "reports": {
+      "type": "hasMany",
+      "model": "report",
+      "foreignKey": "reportProjectId",
+      "primaryKey": "projectId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "requests": {
+      "type": "hasMany",
+      "model": "Request",
+      "foreignKey": "requestProjectId",
+      "primaryKey": "projectId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "schedules": {
+      "type": "hasMany",
+      "model": "schedule",
+      "foreignKey": "scheduleProjectId",
+      "primaryKey": "projectId",
+      "options": {
+        "nestRemoting": true
+      },
+      "through": "project"
     }
   },
   "acls": [
@@ -71,5 +101,13 @@
       "permission": "ALLOW"
     }
   ],
-  "methods": {}
+  "methods": {},
+  "foreignKeys": {
+    "approvalProjectId": {
+      "name": "approvalProjectId",
+      "foreignKey": "approvalProjectId",
+      "entityKey": "projectId",
+      "entity": "Approval"
+    }
+  }
 }

@@ -1,10 +1,12 @@
 {
-  "name": "Approval",
+  "name": "approval",
   "base": "PersistedModel",
   "idInjection": true,
+  "strict": true,
   "options": {
     "validateUpsert": true
   },
+  "forceId": true,
   "properties": {
     "ProjectId": {
       "type": "number",
@@ -19,14 +21,13 @@
       "id": true,
       "generated": true
     },
-    "ApprovalDate": {
+    "approvalDate": {
       "type": "date",
       "required": true
     },
     "approvalProjectId": {
       "type": "string",
-      "id": true,
-      "generated": true
+      "foreignKey": true
     }
   },
   "validations": [],
