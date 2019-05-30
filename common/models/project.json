@@ -2,10 +2,18 @@
   "name": "project",
   "plural": "projects",
   "base": "PersistedModel",
-  "idInjection": true,
   "strict": true,
+  "idInjection": true,
   "options": {
     "validateUpsert": true
+  },
+  "foreignKeys": {
+    "approvalProjectId": {
+      "name": "approvalProjectId",
+      "foreignKey": "approvalProjectId",
+      "entityKey": "projectId",
+      "entity": "Approval"
+    }
   },
   "properties": {
     "projectId": {
@@ -80,13 +88,5 @@
       "permission": "ALLOW"
     }
   ],
-  "methods": {},
-  "foreignKeys": {
-    "approvalProjectId": {
-      "name": "approvalProjectId",
-      "foreignKey": "approvalProjectId",
-      "entityKey": "projectId",
-      "entity": "Approval"
-    }
-  }
+  "methods": {}
 }

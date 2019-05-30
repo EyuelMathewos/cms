@@ -1,8 +1,8 @@
 {
   "name": "approval",
   "base": "PersistedModel",
-  "idInjection": true,
   "strict": true,
+  "idInjection": true,
   "options": {
     "validateUpsert": true
   },
@@ -28,6 +28,13 @@
     "approvalProjectId": {
       "type": "string",
       "foreignKey": true
+    },
+    "approvalRequestId": {
+      "type": "string",
+      "required": true
+    },
+    "approved": {
+      "type": "boolean"
     }
   },
   "validations": [],

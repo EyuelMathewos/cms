@@ -26,7 +26,16 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "approvals": {
+      "type": "hasOne",
+      "model": "approval",
+      "foreignKey": "approvalRequestId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
