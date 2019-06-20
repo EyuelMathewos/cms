@@ -33,13 +33,16 @@
     },
     "scheduleProjectId": {
       "type": "string",
-      "id": true,
-      "generated": true
+      "required": true
     },
     "scheduleId": {
       "type": "string",
       "id": true,
       "generated": true
+    },
+    "scheduleLifeTime": {
+      "type": "string",
+      "required": false
     }
   },
   "validations": [],

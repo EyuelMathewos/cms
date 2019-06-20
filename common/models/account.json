@@ -30,6 +30,12 @@
     "phoneNo": {
       "type": "string",
       "required": true
+    },
+    "particpateIn": {
+      "type": [
+        "string"
+      ],
+      "default": []
     }
   },
   "validations": [],

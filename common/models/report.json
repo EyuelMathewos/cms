@@ -9,12 +9,10 @@
   "properties": {
     "projectname": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "projectId": {
-      "type": "string",
-      "id": true,
-      "required": true
+      "type": "string"
     },
     "detailedActivityDesc": {
       "type": "string",
@@ -38,8 +36,7 @@
     },
     "reportProjectId": {
       "type": "string",
-      "id": true,
-      "generated": true
+      "required": true
     }
   },
   "validations": [],
