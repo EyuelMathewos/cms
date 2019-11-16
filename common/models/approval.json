@@ -8,10 +8,6 @@
   },
   "forceId": true,
   "properties": {
-    "ProjectId": {
-      "type": "number",
-      "required": true
-    },
     "projectName": {
       "type": "string",
       "required": true
@@ -23,7 +19,7 @@
     },
     "approvalDate": {
       "type": "date",
-      "required": true
+      "generated": true
     },
     "approvalProjectId": {
       "type": "string",
